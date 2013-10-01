@@ -1,0 +1,22 @@
+{
+  "name": "urls",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ajcrites/urls",
+  "authors": [
+    "Andrew Crites <acrites@mobiquityinc.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "knockout.js": "~2.2.1",
+    "requirejs": "~2.1.6"
+  }
+}
