@@ -32,5 +32,12 @@ define(['jquery', 'knockout'], function ($, ko) {
         self.setDescription = function () {
             self.description(definition + "<br>&bull; " + self.value());
         };
+
+        self.clearDescription = function () {
+            setTimeout(function () {
+                self.description("");
+            // additional fadeOut delay for transitions
+            }, self.delay() + 200);
+        };
     };
 });

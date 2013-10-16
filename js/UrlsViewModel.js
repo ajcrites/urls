@@ -35,6 +35,12 @@ function ($, ko, UrlPiece) {
                if (piece.valid()) {
                    piece.setDescription();
                }
+               else {
+                   // calculate piece delay and remove on fade out.
+                   // otherwise some remaining pieces may cause undesired
+                   // vertical space
+                   piece.clearDescription();
+               }
            });
            //observableArray is mutable
            if (reverse) {
